@@ -1,0 +1,35 @@
+﻿<div class="row">
+    <div class="col-9">
+        <h2 class="text-primary text-center">User Address List</h2>
+    </div>
+    <div class="col-3">
+        <a asp-action="Upsert" class="btn btn-info">
+            <i class="fas fa-plus"></i>&nbsp; Add New Address
+        </a>
+    </div>
+</div>
+<div class="border col-12 p-2 m-2">
+    <table id="tbldata" class="table table-bordered table-active table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>StreetAddress</th>
+                <th>City</th>
+                <th>State</th>
+                <th>PostalCode</th>
+                <th>PhoneNumber</th>
+                <th>IsHomeAddressType</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+@section scripts
+{
+    <script src="~/js/UserAddress.js"></script>
+   
+}
+
+
+
+
